@@ -1,11 +1,68 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html {
+    background-color: rgba(15, 12, 12, 0.993);
+    color: rgb(245, 238, 238);
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+} */
+
+
+
+header {
+    background-image: url(http://lightfarm.com/wp-content/uploads/2017/08/Rick-Morty_1920.jpg);
+    background-size: cover;
+    background-position: contain;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+p {
+    color: white;
+}
+/* body{
     margin: 0px;
     padding: 0px;
     background: url(http://lightfarm.com/wp-content/uploads/2017/08/Rick-Morty_1920.jpg) no-repeat;
     background-size: contain;
+} */
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
 }
 
+
+
 button{
+    text-align: center;
     padding: 10px;
     border: 0px;
     background: #347a96;
@@ -20,40 +77,13 @@ button:hover{
 
 ul{
     list-style: none;
+    color: black;
 }
 
-/* .box{
-    width: 550px;
-    height: auto;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 40px;
-    text-align: center;
-    margin: auto;
-    margin-top: 5%;
+.getCharacterLocation {
     color: white;
-    font-family: 'Century Gothic',sans-serif;
 }
 
-.box-img{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-}
-.box h1{
-    font-size: 40px;
-    font-family: Stylish;
-    letter-spacing: 4px;
-    font-weight: 100;
-}
-
-.box p{
-    text-align: justify;
-} */
-
-
-/*
-////////FORM
-*/
 
 .contact-form {
     width: 60%;
@@ -86,149 +116,25 @@ input[type=checkbox] {
 
 footer {
     background-color: #333;
-}
-.footer-nav {
-    list-style: none;
-    float: left;
-}
-.social-links {
-    list-style: none;
-    float: right;
-}
-.footer-nav li,
-.social-links li {
-    display: inline-block;
-    margin-right: 20px;
-}
-.footer-nav li:last-child,
-.social-links li:last-child {
-    margin-right: 0;
-}
-.footer-nav li a:link,
-.footer-nav li a:visited,
-.scoial-links li a:link,
-.social-links li a:visited {
-    text-decoration: none;
-    border: 0;
-    color: #888;
+    
 }
 
 
+#characterList li{
+    text-shadow: black;
 
 
-/* <!DOCTYPE html>
-
-
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Rick and Morty</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<body>
-  	<!--
-	NOTE: Should this hyperlink be on the page?
-  	<a href="https://fontmeme.com/fonts/get-schwifty-font/">
-       <img src="https://fontmeme.com/permalink/190517/972093e88d22d5d763cd968cbf423119.png" alt="get-schwifty-font" border="0">
-    </a>
-	-->
-    <div class="box">
-        <img src="" alt="" class="box-img">
-        <h1>Rick and Morty</h1>
-
-      	<!-- NOTE: Button text should be a verb/command -->
-        <button id="getMoreQuotes">Show Characters</button>
-        <section id="characterSection">
-          <ul id="characterList">
-            <!-- Append the character items here... -->
-          </ul>
-        </section>
-    </div>
-    <script src="./scripts/get.js"></script>
-    <script src="./scripts/main.js"></script>
-</body>
-
-</html>
-
-
-///////////////////////////
-
-
-<style>
-/*-----------------------------------------------------------------*/
-  
-  
-/*
-NOTES:
-  -When default styles are not sufficient...
-  	1. Add space (padding/margin)
-  	2. Set border(s)
-  	3. Set background color(s) (but stick with light/neutral colors for page background)
-  	4. Set font color
-  	5. Set font size
-  	6. Use a new non-default font (https://fonts.google.com/)
-  		1. Click the "+" next to the font you like
-  		2. Click "1 Family Selected" at the bottom of the page and follow the directions
-  -When dealing with colors, think SUBTLE
-*/
-
-/* body{
-    margin: 0;
-    padding: 0;
-    background: url(https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F05%2Frick-morty-season-4-premiere-date-debut-episode-adult-swim-1-1.jpg?quality=95&w=1170&cbr=1&q=90&fit=max) no-repeat;
-    background-size: cover;
 }
-  
-button{
-  	padding: 10px;
-  	background: #347a96;
-  	color: white;
-  	border: 0;
-  	font-size: 20px;
-  	cursor: pointer;
-}
-  
-button:hover{
-	background: #345f70;
-}
-  
-ul{
-  list-style: none;
-}
-  
-.box{
-    width: 450px;
-    height: auto;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 40px;
-    text-align: center;
-    margin: auto;
-    margin-top: 5%;
+
+#characterList a{
+
     color: white;
-    font-family: 'Century Gothic',sans-serif;
+    font-weight: bold;
+    text-shadow: black;
+    
+
 }
 
-.box-img{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-}
-.box h1{
-    font-size: 40px;
-    letter-spacing: 4px;
-    font-weight: 100;
-}
 
-.box p{
-    text-align: justify;
-}
 
-  
-  
-  
-/*-----------------------------------------------------------------*/
+

@@ -1,7 +1,7 @@
 "use strict"
 
-const getMoreQuotesButton = document.getElementById('getMoreQuotes');
-getMoreQuotesButton.addEventListener('click', function(e){
+const produceListButton = document.getElementById('produceList');
+produceListButton.addEventListener('click', function(e){
     e.preventDefault();
     updateCharacterList();
 });
