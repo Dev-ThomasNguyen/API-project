@@ -4,16 +4,6 @@
     box-sizing: border-box;
 }
 
-/* html {
-    background-color: rgba(15, 12, 12, 0.993);
-    color: rgb(245, 238, 238);
-    font-family: 'Lato', 'Arial', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    text-rendering: optimizeLegibility;
-} */
-
-
 
 header {
     background-image: url(http://lightfarm.com/wp-content/uploads/2017/08/Rick-Morty_1920.jpg);
@@ -21,6 +11,16 @@ header {
     background-position: contain;
     height: 100vh;
     background-attachment: fixed;
+}
+
+.box {
+    width: 450px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
 }
 
 h1 {
@@ -36,12 +36,11 @@ h2 {
 p {
     color: white;
 }
-/* body{
-    margin: 0px;
-    padding: 0px;
-    background: url(http://lightfarm.com/wp-content/uploads/2017/08/Rick-Morty_1920.jpg) no-repeat;
-    background-size: contain;
-} */
+
+body {
+    background: url(https://blokt.com/wp-content/uploads/2019/01/blockchain-developer.jpg) no-repeat;
+}
+
 
 .logo {
     height: 100px;
